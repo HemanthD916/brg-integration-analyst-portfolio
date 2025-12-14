@@ -17,7 +17,7 @@
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Project</a>
                 <a href="#why-brg">Why BRG</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -35,12 +35,12 @@
         <h2>Technical Skills & Core Competencies</h2>
         <p>Matched to BRG's Intern - Integration Analyst Qualifications:</p>
         <ul>
-            <li><strong>IT Fundamentals & Business Knowledge:</strong> Studied Computer Science, Object-Oriented Programming, Database Applications, and Business Information Systems—ready to support SAP modules and integration.</li>
-            <li><strong>Data Integration & Analysis:</strong> Python, SQL, Tableau, Power BI, Excel (Advanced Knowledge, Microsoft Office Specialist Certified)—ideal for troubleshooting, enhancing systems, and analyzing requirements to improve processes.</li>
-            <li><strong>Programming & Tools:</strong> Core Java, HTML/CSS/JS, C++, COBOL, Jupyter Notebooks—for building, scaling, and maintaining software solutions.</li>
-            <li><strong>Platforms:</strong> Microsoft Office Suite, Google Workspace, Linux, PuTTY, WinSCP—for day-to-day IT support and collaboration.</li>
-            <li><strong>Concepts:</strong> Data Analysis, ERDs, Inheritance & Polymorphism, Data Visualization—to ensure solution integrity and proactive integration across IT functions.</li>
-            <li><strong>Soft Skills:</strong> Analytical Thinking, Collaboration, Communication, Adaptability, Attention to Detail, Data-Driven Decision Making—essential for multitasking, problem-solving, and presenting in team projects.</li>
+            <li><strong>IT Fundamentals & Business Knowledge:</strong> Studied Computer Science, Object Oriented Programming, Database Applications, and Business Information Systems ready to support SAP modules and integration.</li>
+            <li><strong>Data Integration & Analysis:</strong> Python, SQL, Tableau, Power BI, Excel (Advanced Knowledge, Microsoft Office Specialist Certified) ideal for troubleshooting, enhancing systems, and analyzing requirements to improve processes.</li>
+            <li><strong>Programming & Tools:</strong> Core Java, HTML/CSS/JS, C++, COBOL, Jupyter Notebooks for building, scaling, and maintaining software solutions.</li>
+            <li><strong>Platforms:</strong> Microsoft Office Suite, Google Workspace, Linux, PuTTY, WinSCP for day to day IT support and collaboration.</li>
+            <li><strong>Concepts:</strong> Data Analysis, ERDs, Inheritance & Polymorphism, Data Visualization to ensure solution integrity and proactive integration across IT functions.</li>
+            <li><strong>Soft Skills:</strong> Analytical Thinking, Collaboration, Communication, Adaptability, Attention to Detail, Data Driven Decision Making essential for multitasking, problem solving, and presenting in team projects.</li>
         </ul>
     </section>
 
@@ -58,38 +58,29 @@
 
     <section id="projects">
         <h2>Project Experience</h2>
-        <p>Hands-on projects demonstrating skills in system integration, data management, and problem-solving—relevant to BRG's need for SAP enhancements, troubleshooting, and process improvements.</p>
+        <p>Hands on project demonstrating skills in system integration, data management, and problem-solving—relevant to BRG's need for SAP enhancements, troubleshooting, and process improvements.</p>
         <div class="project">
-            <h3>Library Management System – Python (Summer 2024)</h3>
-            <p>Developed a Python-based system for managing catalogs (books, CDs, DVDs) using OOP principles like inheritance and polymorphism. Handled data integration for adding/editing/deleting items, tracking patrons/loans/fines, and generating reports. This simulates real-world IT integration tasks, like connecting SAP with other systems for inventory and business processes.</p>
-            <pre><code># Sample Python Code Snippet: Item Class with Inheritance
+    <h3>Library Management System – Python (Summer 2024)</h3>
+    <p>Developed a Python-based system for managing library catalogs (books, CDs, DVDs) using OOP principles like inheritance and polymorphism. Implemented functionality to add/edit/delete/track patrons, items, fines, and loans. Demonstrates data handling, integration simulation, and reporting—relevant to SAP troubleshooting and process improvements at BRG.</p>
+    <p><a href="https://hemanthd916.github.io/library-management-system/" target="_blank">View Full Code on GitHub</a></p>
+    <pre><code># Sample Python Code: Book Class with Inheritance Simulation
 class LibraryItem:
     def __init__(self, title, item_id):
         self.title = title
         self.item_id = item_id
-        self.is_checked_out = False
+        self.status = "In"
 
 class Book(LibraryItem):
-    def __init__(self, title, item_id, author):
+    def __init__(self, title, item_id, author, cost):
         super().__init__(title, item_id)
         self.author = author
+        self.cost = cost
 
-# Usage: Integrate with database for tracking
-book = Book("Data Integration Basics", "B001", "John Doe")
+# Usage: Integrate with JSON for persistence
+book = Book("Data Integration Basics", 1, "John Doe", 20.99)
 </code></pre>
-        </div>
-        <div class="project">
-            <h3>Mean Green EagleLift Ride-Sharing System – C++ (Fall 2023)</h3>
-            <p>Designed a C++ system for matching drivers/passengers based on needs (e.g., accessibility, capacity). Created ERDs to map relationships and optimized algorithms for efficiency. This showcases building scalable solutions and analyzing requirements—key for supporting BRG's business functions and IT integrations.</p>
-            <pre><code>// Sample C++ Code Snippet: Matching Function
-bool matchDriverToPassenger(Driver d, Passenger p) {
-    if (d.capacity >= p.needs && d.accessible == p.requires_accessible) {
-        return true; // Integrate with SQL for data persistence
-    }
-    return false;
-}
-</code></pre>
-        </div>
+</div>
+        
     </section>
 
     <section id="why-brg">
